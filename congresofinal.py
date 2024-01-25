@@ -7,10 +7,10 @@ from sklearn.metrics import mean_squared_error, r2_score
 new_line = '\n'
 
 # importing dataset
-dataset = pd.read_excel('../datasets/tetvol.xlsx')
+dataset = pd.read_excel('../tetvol.xlsx')
 x = dataset.iloc[:, :-1].values.reshape(-1, 1)
 y = dataset.iloc[:, -1].values.reshape(-1, 1)
-dataset1 = pd.read_excel('../datasets/tetabs.xlsx')
+dataset1 = pd.read_excel('../tetabs.xlsx')
 x1 = dataset1.iloc[:, :-1].values.reshape(-1, 1)
 y1 = dataset1.iloc[:, -1].values.reshape(-1, 1)
 

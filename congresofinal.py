@@ -25,7 +25,6 @@ coef = round(regression.coef_[0][0], 3)
 intercept = round(regression.intercept_[0], 3)
 regresssion_equation = f"y={coef}x+{intercept}"
 
-
 # Crear métrica de error cuadrado medio y r cuadrada
 # para el espectrofotómetro casero
 rmse = round(mean_squared_error(y, regression.predict(x), squared=False), 3)
@@ -73,7 +72,6 @@ plt.yticks(np.arange(min(y)-0.02, max(y), 0.3))
 plt.savefig('Casero')
 plt.show()
 
-
 # visualizar regresión del espectrofotómetro comercial
 plt.scatter(x1, y1, color='red')
 plt.plot(x1, regression1.predict(x1), color='blue')
@@ -85,8 +83,6 @@ plt.xticks(np.arange(min(x), max(x), 0.01))
 plt.yticks(np.arange(min(y1), max(y1), 0.3))
 plt.savefig('Comercial')
 plt.show()
-
-
 
 # visualizar regresión de la comparación de espectromotómetros
 plt.scatter(y1, y, color='red')

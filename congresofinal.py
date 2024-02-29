@@ -63,7 +63,7 @@ plot_text2 = f"RMSE = {rmse2}{new_line}r\u00B2 = {r22}{new_line}{regresssion_equ
 # visualizar regresión del espectrofotómetro casero
 plt.scatter(x, y, color='red')
 plt.plot(x, regression.predict(x), color='blue')
-plt.title("Respuestra de espectrofotómetro casero", fontsize=18)
+plt.title("Respuesta de espectrofotómetro casero", fontsize=18)
 plt.xlabel('Concentración de [Cu(NH\u2083)\u2084]SO\u2084·H\u2082O', fontsize=16)
 plt.ylabel('Ln((R\u1D62·V\u209B)/(V\u209B-V\u2091))', fontsize=16)
 plt.text(0, 6.8, plot_text, fontsize=12)
@@ -75,7 +75,7 @@ plt.show()
 # visualizar regresión del espectrofotómetro comercial
 plt.scatter(x1, y1, color='red')
 plt.plot(x1, regression1.predict(x1), color='blue')
-plt.title("Respuestra de espectrofotómetro comercial", fontsize=18)
+plt.title("Respuesta de espectrofotómetro comercial", fontsize=18)
 plt.xlabel('Concentración de [Cu(NH\u2083)\u2084]SO\u2084·H\u2082O', fontsize=16)
 plt.ylabel('Absorbancia', fontsize=16)
 plt.text(0.0, 1.3, plot_text1, fontsize=12)
